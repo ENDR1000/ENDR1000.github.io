@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Trial Web Site</title>
+
+</head>
+<body>
+<!-- LAYOUT -->
+
+  <div id="app">
+
+<!-- NAVBAR -->
+
+    <nav class="navbar sticky-top bg-body-tertiary">
+
+      <div class="container-fluid">
+
+        <a id="brand" href="#">MO</a>
+
+      </div>
+
+    </nav>
+
+<!-- MENU -->
+
+  <div class="sections-menu">
+
+    <span class="menu-point" v-bind:class="{active: activeSection == index}" v-on:click="scrollToSection(index)" v-for="(offset, index) in offsets" v-bind:key="index" v-title="'Go to section ' + (index+1)">
+    
+    </span>
+
+  </div>
+
+<!-- MAİN PAGE -->
+
+  <section id="mainPage" >
+    
+    <div id="backgroundVideo">
+
+        <video  id="backgroundVideo" autoplay muted loop>
+
+          <source  src="İMG/bgvideo.mp4" type="video/mp4">
+
+        </video>
+
+      </div>
+      
+  </section>
+
+  <!-- WORK PAGE -->
+
+  <section id="workPage" class="section">
+
+    <div class="slideshow">
+
+      <div class="slideshow-inner">
+
+        <div class="slides">
+
+          <div class="slide  is-active">
+
+            <div class="slide-content">
+
+              <div class="caption">
+
+                <div class="title">
+
+                  <span class="workTitle">W</span>
+
+                  <span class="workTitle titleRight">e</span>
+
+                  <br>
+
+                  <span class="workSecondTitle">Cre</span>
+
+                  <span class="workSecondTitle titleRight">ate</span>
+
+                </div>
+
+                <div class="text">
+                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur accusantium et illo, vero eveniet pariatur quam quis nostrum, quasi neque totam expedita sapiente earum molestias voluptatum a quibusdam! Fugiat.</p>
+                
+                </div> 
+                
+              </div>
+
+            </div>
+
+            <div class="image-container">
+
+              <img src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-man-suits/subhome-xmedia-09-2//w/1920/IMAGE-landscape-fill-f3eb6b07-0dfa-4a0e-8383-915506ba1218-default_0.jpg?ts=1677744144938" alt="" class="image" />
+            
+            </div>
+            
+          </div>
+
+          <div class="slide">
+
+            <div class="slide-content">
+
+              <div class="caption">
+
+                <div class="title">
+                  <span class="workTitle">We</span>
+
+                  <br>
+                  
+                  <span class="workSecondTitle">Create</span>
+                
+                </div>
+                <div class="text">
+                  
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae magnam modi necessitatibus et saepe distinctio vel officiis suscipit corporis beatae error accusamus soluta, dolorem a fugiat recusandae quis repudiandae eligendi.</p>
+                
+                </div> 
+                
+              </div>
+
+            </div>
+
+            <div class="image-container">
+
+              <img src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-woman-new/subhome-xmedia-09-02//w/1920/IMAGE-landscape-fill-2e5f0b4b-3cce-4470-9f76-7da97d433b41-default_0.jpg?ts=1677698699937" alt="" class="image" />
+            
+            </div>
+          
+          </div>
+
+          <div class="slide">
+
+            <div class="slide-content">
+
+              <div class="caption">
+
+                <div class="title">
+
+                  <span class="workTitle">We</span>
+                  
+                  <br>
+                  
+                  <span class="workSecondTitle">Create</span>
+                
+                </div>
+                
+                <div class="text">
+                  
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum doloremque labore accusantium nostrum autem eos numquam, porro dignissimos commodi repellendus, eaque a odio. Velit in magni voluptatum, illo porro sunt.</p>
+                
+                </div> 
+                
+              </div>
+
+            </div>
+
+            <div class="image-container">
+
+              <img src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-man-joinlife/subhome-xmedia-08//w/1920/IMAGE-landscape-default-fill-5fc5c432-c15b-4745-a8e1-ad72f977d808-default_0.jpg?ts=1677148927305" alt="" class="image" />
+            
+            </div>
+
+          </div>
+
+        <div class="arrows">
+
+          <div class="arrow prev">
+
+            <span class="svg svg-arrow-left">
+
+              <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+              
+              <span class="alt sr-only"></span>
+
+            </span>
+
+          </div>
+
+          <div class="arrow next">
+
+            <span class="svg svg-arrow-right">
+
+              <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+              
+              <span class="alt sr-only"></span>
+
+            </span>
+
+          </div>
+
+        </div>
+
+      </div> 
+
+    </div>
+
+  </section>
+
+  <section id="aboutPage">
+
+    <h1 class="aboutTitle">About</h1>
+
+    <h2 class="aboutSecondTitle">Us</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus doloribus esse, veritatis, necessitatibus rem modi ex numquam magni adipisci, distinctio fugiat voluptate ea quidem similique laborum voluptas asperiores explicabo.</p>
+
+    <div class="aboutBackgroundContainer">
+
+      <img src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-man-new/subhome-xmedia-08-2//w/1920/IMAGE-landscape-fill-24f2378d-dd57-49df-8962-1730b956e6e3-default_0.jpg?ts=1677239531402" alt="">
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT PAGE -->
+
+  <section id="contactPage">
+
+    <div class="contactText">
+
+    <h1 class="contactTitle">Bize Ulaşın</h1>
+
+    <div class="socialLinkContainer">
+
+      <a class="socialLinks" href="#">TIKTOK</a>
+
+      <a class="socialLinks" href="#">INSTAGRAM</a>
+
+      <a class="socialLinks" href="#">FACEBOOK</a>
+
+      <a class="socialLinks" href="#">TWITTER</a>
+
+      <a class="socialLinks" href="#">PINTEREST</a>
+
+      <a class="socialLinks" href="#">YOUTUBE</a>
+
+    </div>
+
+    </div>
+
+  </section>
+  
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+
+<script src="JS/fullpage.js"></script>
+
+<script src="https://kit.fontawesome.com/3351c5141b.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+<script src="JS/slider.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+</body>
+</html>
